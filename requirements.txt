@@ -1,4 +1,10 @@
-git-filter-repo==2.47.0
-setuptools==75.8.0
-wheel==0.45.1
+dash==2.18.2
+matplotlib==3.9.2
+numpy==1.26.4
+os
+pandas==2.2.2
+pickle
+plotly==5.24.1
+sklearn
+webbrowser
 gunicorn
