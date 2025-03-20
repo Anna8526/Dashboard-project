@@ -419,9 +419,8 @@ def update_predictions(selected_model, selected_metrics):
     
     # Define the model file paths
     model_file_paths = {
-        "Linear Regression": r"C:\Users\anna_\Downloads\Project 1 Energy Services IST1115467\linear_regression_model.pkl",
-        "Random Forest": r"C:\Users\anna_\Downloads\Project 1 Energy Services IST1115467\random_forest_model.pkl",
-        "Gradient Boosting": r"C:\Users\anna_\Downloads\Project 1 Energy Services IST1115467\boosting_model.pkl"
+        "Linear Regression": os.path.join(skript_dir, "linear_regression_model.pkl"),
+        "Gradient Boosting": "Gradient Boosting": os.path.join(skript_dir, "boosting_model.pkl"),
     }
     
     # Load the appropriate model using the selected model's path
