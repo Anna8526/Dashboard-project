@@ -57,9 +57,8 @@ df_2019_filtered = df_2017_2019[df_2017_2019['datetime'].dt.year == 2019]
 # Load models
 models = {}
 model_files = {
-    "Linear Regression": r"os.path.join(skript_dir, "linear_regression_model.pkl"),
-    "Random Forest": r"C:\Users\anna_\Downloads\Project 1 Energy Services IST1115467\random_forest_model.pkl",
-    "Gradient Boosting": r"os.path.join(skript_dir, boosting_model.pkl"),
+    "Linear Regression": "os.path.join(skript_dir, "linear_regression_model.pkl"),
+    "Gradient Boosting": "os.path.join(skript_dir, boosting_model.pkl"),
 }
 
 for model_name, file_path in model_files.items():
