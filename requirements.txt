@@ -1,7 +1,7 @@
 git-filter-repo==2.47.0
 setuptools==75.8.0
 wheel==0.45.1
-Dash
-Pandas
-Numpy
+dash
+pandas
+numpy
 gunicorn
