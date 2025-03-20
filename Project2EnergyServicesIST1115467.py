@@ -420,7 +420,7 @@ def update_predictions(selected_model, selected_metrics):
     # Define the model file paths
     model_file_paths = {
         "Linear Regression": os.path.join(skript_dir, "linear_regression_model.pkl"),
-        "Gradient Boosting": "Gradient Boosting": os.path.join(skript_dir, "boosting_model.pkl"),
+        "Gradient Boosting": os.path.join(skript_dir, "boosting_model.pkl"),
     }
     
     # Load the appropriate model using the selected model's path
