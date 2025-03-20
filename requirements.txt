@@ -1,7 +1,6 @@
 dash==2.18.2
 matplotlib==3.9.2
-numpy==1.26.4
-os
+numpy==1.27
 pandas==2.2.2
 pickle
 plotly==5.24.1
