@@ -20,9 +20,12 @@ import pickle
 from sklearn.preprocessing import StandardScaler
 
 # Load data
+skript_dir = os.path.dirname(os.path.abspath(__file__))
+merged_data_datei = os.path.join(script_dir, "Merged_Data.csv")
+merged_data_2019_datei = os.path.join(script_dir, "Merged_data2019.csv")
 # Load data
-df_2017_2018 = pd.read_csv("Merged_data.csv", parse_dates=["datetime"])
-df_2019 = pd.read_csv("Merged_data2019.csv", parse_dates=["datetime"])
+df_2017_2018 = pd.read_csv(merged_data_datei, parse_dates=["datetime"])
+df_2019 = pd.read_csv(merged_data_2019_datei, parse_dates=["datetime"])
 df_2019 = df_2019.drop(columns=['predicted_Power_kW'])
 # Merge all years into a single dataset
 df_2017_2019 = pd.concat([df_2017_2018, df_2019], ignore_index=True)
