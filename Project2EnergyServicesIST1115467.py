@@ -21,8 +21,8 @@ from sklearn.preprocessing import StandardScaler
 
 # Load data
 skript_dir = os.path.dirname(os.path.abspath(__file__))
-merged_data_datei = os.path.join(script_dir, "Merged_Data.csv")
-merged_data_2019_datei = os.path.join(script_dir, "Merged_data2019.csv")
+merged_data_datei = os.path.join(skript_dir, "Merged_Data.csv")
+merged_data_2019_datei = os.path.join(skript_dir, "Merged_data2019.csv")
 # Load data
 df_2017_2018 = pd.read_csv(merged_data_datei, parse_dates=["datetime"])
 df_2019 = pd.read_csv(merged_data_2019_datei, parse_dates=["datetime"])
