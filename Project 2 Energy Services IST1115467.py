@@ -106,6 +106,7 @@ footer = html.Div([
 
 # Initialize Dash app
 app = dash.Dash(__name__)
+server=app.server
 app.layout = html.Div([
     # Header with Logo & Title in One Line
     
